@@ -69,22 +69,22 @@ nano sum.asm
 ```
 
 ```assembly
-section .data       ' data section (variables)
-    num1 db 10      ' define a byte variable num1 with value 10
-    num2 db 20      ' define a byte variable num2 with value 20
-    sum db 0        ' define a byte variable sum with value 0
+section .data
+    num1 db 10
+    num2 db 20
+    sum db 0
 
-section .text       ' code section (instructions)
-    global _start   ' entry point of the program
+section .text
+    global _start
 
-_start:            ' start of the program
-    mov al, [num1] ' move the value of num1 into the al register
-    add al, [num2] ' add the value of num2 to the al register
-    mov [sum], al  ' move the value of the al register into sum
+_start:
+    mov al, [num1]
+    add al, [num2]
+    mov [sum], al
 
-    mov eax, 1     ' exit system call
-    mov ebx, 0     ' exit status
-    int 0x80       ' call the kernel
+    mov eax, 1
+    mov ebx, 0
+    int 0x80
 ```
 
 ✅ 2. 🛠 Assemble with NASM
