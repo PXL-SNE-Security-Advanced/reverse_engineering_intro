@@ -182,7 +182,7 @@ Execute the compiled file with:
 Expected output:
 
 ``` output
-Hello, Kali Linux!
+Hello from the greet function!
 ```
 
 ## 4. Running Without `./` (Optional)
