@@ -69,6 +69,8 @@ Compile the source into an object file (machine code with symbols):
 - Not executable
 - Has unresolved references (e.g. to puts)
 - readelf -h hello.o → Type: REL (Relocatable file)
+- It contains machine code and data, but still with unresolved symbols and relocation entries.
+- It cannot be executed directly. Instead, it must be linked with other object files and libraries by the linker
 
 Run the following command to compile the program:
 
