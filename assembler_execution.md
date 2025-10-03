@@ -89,6 +89,8 @@ _start:
 
 ✅ 2. 🛠 Assemble with NASM
 
+ELF = Executable and Linkable Format, the universal binary format on Linux/Unix systems.
+
 ```bash
 nasm -f elf32 sum.asm -o sum.o
 ```
