@@ -82,6 +82,14 @@ gcc -c hello.c -o hello.o
 - `hello.c` → The C source file.
 - `-o hello` → Output file named `hello` (a non-executable object file.).
 
+
+When the compiler produces an object file (.o on Linux, .obj on Windows), it includes a symbol table section.
+    - This table lists all symbols (functions, variables, labels) that the object file defines or references.
+
+Example: gcc -c main.c produces main.o → contains machine code + symbol table.
+
+
+
 ```bash
 readelf -h hello.o
 ```
