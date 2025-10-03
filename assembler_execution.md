@@ -304,6 +304,7 @@ gs             0x0                 0
 readelf -S ./sum
 ```
 
+```output
 There are 6 section headers, starting at offset 0x20ec:
 
 Section Headers:
@@ -319,6 +320,7 @@ Key to Flags:
   L (link order), O (extra OS processing required), G (group), T (TLS),
   C (compressed), x (unknown), o (OS specific), E (exclude),
   D (mbind), p (processor specific)
+```
 
 ## Execute the assembly code with GDB (Graphical Debugger)
 
