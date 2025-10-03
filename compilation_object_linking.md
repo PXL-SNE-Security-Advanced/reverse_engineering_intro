@@ -84,7 +84,8 @@ gcc -c hello.c -o hello.o
 
 
 When the compiler produces an object file (.o on Linux, .obj on Windows), it includes a symbol table section.
-    - This table lists all symbols (functions, variables, labels) that the object file defines or references.
+
+- This table lists all symbols (functions, variables, labels) that the object file defines or references.
 
 Example: gcc -c main.c produces main.o → contains machine code + symbol table.
 
