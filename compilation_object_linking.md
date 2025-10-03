@@ -289,6 +289,11 @@ xxd hello_x86.exe| head
 00000090: d306 0000 e000 0601 0b01 022b 0072 0000  ...........+.r..
 ```
 
+- MZ = signature of DOS executables (named after Mark Zbikowski).
+- Still used today as the first bytes of any Windows .exe or .dll file.
+- Followed by "PE\0\0" which marks the real Windows PE header
+
+
 ## Summary
 
 | Target                  | Command                                         |
